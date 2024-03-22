@@ -1,0 +1,25 @@
+package exempro;
+
+import java.util.Scanner;
+
+public class Temporizador {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("entre com minutos");
+		int minutos= sc.nextInt();
+		
+		System.out.println("entre com segundos");
+		int segundos= sc.nextInt();
+
+		for (int minuto = minutos; minuto > -1; minuto--) {
+
+			for (int segundo = segundos; segundo > -1; segundo--) {
+
+				System.out.println(minuto + " : " + segundo);
+
+			}
+		}
+		sc.close();
+	}
